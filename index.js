@@ -32,6 +32,6 @@ app.listen(5000, () => {
 })
 
 
-mongoose.connect('mongodb://localhost:27017',{dbName:"fishtamovie"}).then((res) => {
+mongoose.connect('mongodb+srv://mikiyas25kelifa:bqe57GcX3g8ET8Ar@cluster0.o2ubugm.mongodb.net/',{dbName:"fishtamovie"}).then((res) => {
     console.log('Mongoss Connected')
 })
