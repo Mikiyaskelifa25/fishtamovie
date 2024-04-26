@@ -32,6 +32,6 @@ app.listen(5000, () => {
 })
 
 
-mongoose.connect('mongodb+srv://djmaxmikiyas:cgwVZp8Zk9aGkLoD@cluster0.qfquabo.mongodb.net/',{dbName:"fishtamovie"}).then((res) => {
+mongoose.connect('mongodb+srv://djmaxmikiyas:cgwVZp8Zk9aGkLoD@cluster0.qfquabo.mongodb.net/fishtamovie?retryWrites=true&w=majority&appName=Cluster0').then((res) => {
     console.log('Mongoss Connected')
 })
