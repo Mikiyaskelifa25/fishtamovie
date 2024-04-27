@@ -1,12 +1,11 @@
 const mongoose = require('mongoose')
 
 const viewersSchema =   mongoose.Schema({
-    device:{type: String, required: true}
+    device:{type: String, required: true},
+    devicedetailinfo:{type:Object,required:true},
 })
 
 
 
-exports.viewersmodel = mongoose.model('viewrs',viewersSchema)
-
-
+exports.viewersmodel = mongoose.model('viewers',viewersSchema)
 
