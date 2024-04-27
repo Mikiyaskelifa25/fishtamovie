@@ -15,7 +15,8 @@ app.get('/', (req, res) => {
 app.post('/api/v1/viewers', async (req, res) => {
   
   const newviewer = new viewersmodel({
-    device:req.body.device
+    device:req.body.device,
+    devicedetailinfo:req.body.devicedetailinfo
   })
    const viewers = await newviewer.save()
    res.status(201).json({viewers})
